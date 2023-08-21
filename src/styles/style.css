@@ -1,0 +1,29 @@
+@import "style1_3.scss";
+@import "style1_4.scss";
+@import "style1_5.scss";
+@import "style1_6.scss";
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Black.eot');
+    src: local('TT Lakes Light'), local('TTLakes-Light'),
+        url('./fonts/TTLakes/TTLakes-Light.eot?#iefix') format('embedded-opentype');
+        /* url('./fonts/TTLakes/TTLakes-Light.woff') format('woff'),
+        url('./fonts/TTLakes/TTLakes-Light.ttf') format('truetype'); */
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'TT Lakes';
+}
+
+button {
+    border: none;
+}
