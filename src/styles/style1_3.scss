@@ -167,15 +167,15 @@ div.scrollmenu a:hover,  div.scrollmenu a:focus{
 }
 
 @media (max-width:767.9px) {
-    .navigation__call {
+    .navigation > .navigation__call {
         display: none;
     }
 
-    .navigation__chat {
+    .navigation > .navigation__chat {
         display: none;
     }
 
-    .navigation__profile {
+    .navigation > .navigation__profile {
         display: none;
     }
 
@@ -197,6 +197,10 @@ div.scrollmenu a:hover,  div.scrollmenu a:focus{
         margin-right: 16px;
     }
 
+    .readmore__title3 {
+        display: none;
+    }
+
     .main__header-navigator {
         display: none;
     }
@@ -205,7 +209,7 @@ div.scrollmenu a:hover,  div.scrollmenu a:focus{
         display: none;
     }
 
-    .button {
+    .readmore__article > .readmore__button {
         display: none;
     }
 
