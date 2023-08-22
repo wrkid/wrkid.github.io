@@ -14,14 +14,17 @@ module.exports = {
         filename: '[name].bundle.js',
     },
 
+    devtool: "source-map",
+
     optimization: {
         splitChunks: {
           chunks: 'all',
         },
     },
+    
     devServer: {
         static: {
-          directory: path.join(__dirname, 'dist'), // Каталог для статики
+          directory: path.join(__dirname, 'docs'), // Каталог для статики
         },
         open: true, // Автоматически открывать браузер
     },
@@ -51,7 +54,6 @@ module.exports = {
         })
     ],
 
-
     module: {
         rules: [
             // JavaScript
@@ -59,22 +61,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
-            },
-            // изображения
-            // {
-            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            //     type: 'asset/resource',
-            //     loader: 'file-loader',
-            //     options:{
-            //         name: '[name].[ext]',
-            //         outputPath: './img',
-            //         url: false,
-            //         esModule: false
-            //     }
-            // },
-        
-        
-           
+            }, 
         
             // шрифты
             {
