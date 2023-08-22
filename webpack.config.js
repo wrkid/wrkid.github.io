@@ -19,7 +19,14 @@ module.exports = {
           chunks: 'all',
         },
     },
-    mode: 'development',
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'dist'), // Каталог для статики
+        },
+        open: true, // Автоматически открывать браузер
+    },
+    
+    mode: 'development', // Режим сборки
 
     plugins: [
         new HtmlWebpackPlugin({
